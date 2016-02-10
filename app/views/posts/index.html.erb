@@ -1,0 +1,11 @@
+<% @posts.each do |tuple| %>
+<center>
+<%= image_tag tuple.image.url(:medium) %>
+</center>
+<br>
+<center>
+	<%= tuple.description %>
+</center>
+	
+<br>
+<% end %>
